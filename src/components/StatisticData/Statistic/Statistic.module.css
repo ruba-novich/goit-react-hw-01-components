@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sigmar One', cursive;
+  width: 100%;
+  height: 90px;
+  color: black;
+}
+
+.label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.percentage {
+  font-size: 24px;
+}

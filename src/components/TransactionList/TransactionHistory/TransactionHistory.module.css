@@ -1,0 +1,16 @@
+.list {
+  color: black;
+  text-align: center;
+  font-family: 'Odibee Sans', cursive;
+}
+.list:nth-child(2n) {
+  background-color: rgb(221, 255, 255);
+}
+.listBody {
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid 1px #ccc;
+  vertical-align: bottom;
+}
