@@ -21,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -42,9 +43,14 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "prop-types": "^15.7.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx,css,md,scss}": "prettier --write"
   }
 }
